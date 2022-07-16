@@ -1,8 +1,7 @@
 import html2canvas from 'html2canvas';
 import { useState } from 'react';
 import './App.css';
-import * as React from 'react';
-import Button from '@mui/material/Button';
+
 
 function App() {
 
@@ -47,8 +46,7 @@ function App() {
 
       <input onChange={onChangeLinea1} type="text" placeholder="Linea 1" /> <br />
       <input onChange={onChangeLinea2} type="text" placeholder="Linea 2" /> <br />
-      <Button variant="contained">Exportar</Button>
-
+      <button onClick={onClickExportar}>Exportar</button>
 
       <div className="meme" id="meme">
         <span>{linea1}</span> <br />
