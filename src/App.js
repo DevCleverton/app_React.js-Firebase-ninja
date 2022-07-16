@@ -2,7 +2,6 @@ import html2canvas from 'html2canvas';
 import { useState } from 'react';
 import './App.css';
 import * as React from 'react';
-import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
 function App() {
