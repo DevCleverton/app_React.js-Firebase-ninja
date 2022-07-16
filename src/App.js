@@ -1,10 +1,6 @@
 import html2canvas from 'html2canvas';
 import { useState } from 'react';
 import './App.css';
-import * as React from 'react';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
-
 
 
 function App() {
@@ -47,11 +43,10 @@ function App() {
         <option value="philosoraptor">Philosoraptor</option>
         <option value="smart">Smart Guy</option>
       </select> <br />
-     
-  );
+
       <input onChange={onChangeLinea1} type="text" placeholder="Linea 1" /> <br />
       <input onChange={onChangeLinea2} type="text" placeholder="Linea 2" /> <br />
-     <Button variant={onClickExportar}>Exportar</button>
+      <button onClick={onClickExportar}>Exportar</button>
 
       <div className="meme" id="meme">
         <span>{linea1}</span> <br />
@@ -63,13 +58,5 @@ function App() {
   );
 }
 
-export default function BasicButtons() {
-  return (
-    <Stack spacing={2} direction="row">
-      <Button variant="text">Text</Button>
-      <Button variant="contained">Contained</Button>
-      <Button variant="outlined">Outlined</Button>
-    </Stack>
-  );
-}
+
 export default App;
