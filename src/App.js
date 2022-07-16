@@ -46,8 +46,8 @@ function App() {
 
       <input onChange={onChangeLinea1} type="text" placeholder="Linea 1" /> <br />
       <input onChange={onChangeLinea2} type="text" placeholder="Linea 2" /> <br />
-      <button onClick={onClickExportar}>Exportar</button>
-      <Button onClickvariant="outlined">Exportar</Button>
+      <Button variant="contained">exportar img</Button>
+
 
       <div className="meme" id="meme">
         <span>{linea1}</span> <br />
